@@ -14,6 +14,10 @@ body {
   border: 1px solid red;
 }
 
+img {
+  max-width: 100%;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -375,12 +379,48 @@ template {
   padding-bottom: 40px;
 }
 
-.navbar__search {
+.navbar-top__search {
   margin-right: auto;
   margin-left: 108px;
 }
 
-.navbar .search {
+.navbar-top__menu-button {
+  display: none;
+}
+
+.navbar-top-bottom {
+  background-color: #0A223D;
+}
+
+.navbar-top-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 31px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #fff;
+}
+
+.navbar-top-menu__link {
+  color: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.logo {
+  width: 177px;
+}
+
+.search {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -390,7 +430,7 @@ template {
   height: 40px;
 }
 
-.navbar .search__input {
+.search__input {
   width: 350px;
   height: 100%;
   padding-left: 23px;
@@ -402,7 +442,7 @@ template {
   color: #333333;
 }
 
-.navbar .search__button {
+.search__button {
   position: absolute;
   top: 0;
   right: 0;
@@ -412,7 +452,7 @@ template {
   background-color: #EC1F46;
 }
 
-.navbar .user {
+.user {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -422,7 +462,7 @@ template {
   text-decoration: none;
 }
 
-.navbar .user__avatar {
+.user__avatar {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -430,10 +470,81 @@ template {
      object-fit: cover;
 }
 
-.navbar .user__name {
+.user__name {
   margin-left: 18px;
   font-size: 14px;
   line-height: 18px;
   color: #333333;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 700px;
+  }
+  .logo {
+    width: 132px;
+  }
+  .navbar-top {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .navbar__search {
+    margin-left: auto;
+    max-width: 340px;
+  }
+  .navbar-menu {
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+  .navbar-menu__link {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 576px;
+    width: 92%;
+  }
+  .navbar__search, .navbar-menu, .navbar__user {
+    display: none;
+  }
+  .menu-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 16px;
+    height: 11px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border: none;
+    background-color: #fff;
+  }
+  .menu-button__line {
+    width: 16px;
+    height: 1px;
+    background-color: #333333;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    width: 99px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
