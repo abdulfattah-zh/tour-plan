@@ -1236,5 +1236,20 @@ template {
   .subscribe {
     width: 100%;
   }
+  .reviews-slider__text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+  }
+  .reviews__title {
+    margin: auto;
+    max-width: 244px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    text-transform: uppercase;
+  }
 }
 /*# sourceMappingURL=style.css.map */
