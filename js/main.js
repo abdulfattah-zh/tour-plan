@@ -7,7 +7,7 @@ var horelSlider = new Swiper('.hotel-slider', {
     nextEl: '.hotel-slider__button--next',
     prevEl: '.hotel-slider__button--prev',
   },
-  effect: "coverflow",
+ 
 });
 
 var reviewsSlider = new Swiper('.reviews-slider', {
