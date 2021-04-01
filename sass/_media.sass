@@ -18,6 +18,8 @@
       flex-basis: 100%
     &__message
       flex-basis: 100%
+    &-wrapper
+      grid-template-columns: repeat(4, minmax(min-content, 1fr))
 @media (max-width: 992px)
   .container,
   .newsletter-wrapper
@@ -93,6 +95,14 @@
       &-form
         grid-column: span 5
         grid-row: 4
+@media (max-width: 878px)
+  .modal
+    &__div
+      display: flex
+      flex-direction: column
+    &__button
+      margin-bottom: 15px
+
 @media (max-width: 768px)
   .container
     max-width: 576px
@@ -126,6 +136,7 @@
       padding-top: 30px
       &--visible
         display: block
+        overflow-y: auto
     &-menu
       flex-direction: column
       &__item
@@ -212,6 +223,23 @@
   .footer
     &__input
       flex-basis: 100%
+@media (max-width: 768px)
+  .footer
+    &__payments
+      width: 90%
+  .modal
+    &__dialog
+      max-width: 350px
+      padding: 16px 44px
+    &__title
+      font-size: 14px
+      line-height: 19px
+    &__div
+      display: flex
+      flex-direction: column
+    &__button
+      margin-bottom: 15px
+
 @media (max-width: 576px)
   .logo
     width: 99px
@@ -274,8 +302,38 @@
       &-form
         grid-row: 7
         grid-column: 1
+    &__info
+      grid-row: 8
+      grid-column: 1 
+    &__div
+      display: flex
+      flex-direction: column-reverse
+    &__info
+      margin-bottom: 15px
+    &__item
+       &-li
+         display: inline
+    // &__payments
+    //   grid-row: 10
+    //   grid-column: 1
+    //   display: flex
+    //   flex-direction: column
     &__title
       &--inline
         margin-right: 100px
         margin-bottom: 20px
-    
+    &__payments
+      width: 75%
+@media (max-width: 520px)
+  .footer
+    &__payments
+        margin-bottom: 20px
+        &-icons
+          margin-left: 20px
+    &__fix
+      justify-content: start
+      flex-wrap: wrap
+@media (max-width: 420px)
+    .search
+      &__input
+        width: auto

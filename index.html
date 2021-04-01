@@ -11,8 +11,8 @@
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <script
       src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"
       type="text/javascript"
@@ -25,7 +25,7 @@
         <div class="navbar-top">
           <a href="" class="logo">
             <img
-              src="img/logo/horizontal-logo.svg"
+              src="./img/logo/horizontal-logo.svg"
               alt="Logo: Best Tour Plan"
               class="logo__image"
             />
@@ -42,7 +42,7 @@
               placeholder="Search Location"
             />
             <button class="search__button">
-              <img src="img/search.svg" alt="Icon: search" />
+              <img src="./img/search.svg" alt="Icon: search" />
             </button>
             <!-- /.button -->
           </form>
@@ -50,7 +50,7 @@
 
           <a class="user navbar__user navbar__user--mobile_hidden">
             <img
-              src="img/user-avatar.jfif"
+              src="./img/user-avatar.jfif"
               alt="avatar: Nathan"
               class="user__avatar"
             />
@@ -73,7 +73,7 @@
             <li class="navbar-menu__item navbar-menu__item--mobile_visible">
               <a class="user navbar__user navbar__user--mobile_visible">
                 <img
-                  src="img/user-avatar.jfif"
+                  src="./img/user-avatar.jfif"
                   alt="avatar: Nathan"
                   class="user__avatar"
                 />
@@ -93,7 +93,7 @@
                   placeholder="Search Location"
                 />
                 <button class="search__button">
-                  <img src="img/search.svg" alt="Icon: search" />
+                  <img src="./img/search.svg" alt="Icon: search" />
                 </button>
                 <!-- /.button -->
               </form>
@@ -147,11 +147,11 @@
           <div class="hotel-info__text">
             <div class="hotel-wrapper">
               <div class="stars">
-                <img src="img/star.svg" alt="star" />
-                <img src="img/star.svg" alt="star" />
-                <img src="img/star.svg" alt="star" />
-                <img src="img/star.svg" alt="star" />
-                <img src="img/star.svg" alt="star" />
+                <img src="./img/star.svg" alt="star" />
+                <img src="./img/star.svg" alt="star" />
+                <img src="./img/star.svg" alt="star" />
+                <img src="./img/star.svg" alt="star" />
+                <img src="./img/star.svg" alt="star" />
               </div>
               <h1 class="hotel-name hotel-info__name">GRAND HILTON HOTEL</h1>
               <span class="offer hotel-info__offer">Flash Offer</span>
@@ -182,7 +182,7 @@
               <div class="swiper-slide hotel-slider__item">
                 <img
                   class="hotel-slider__image"
-                  src="img/slider/slide1.jpg"
+                  src="./img/slider/slide1.jpg"
                   alt=""
                   srcset=""
                 />
@@ -190,7 +190,7 @@
               <div class="swiper-slide hotel-slider__item">
                 <img
                   class="hotel-slider__image"
-                  src="img/slider/slide2.jpg"
+                  src="./img/slider/slide2.jpg"
                   alt=""
                   srcset=""
                 />
@@ -198,7 +198,7 @@
               <div class="swiper-slide hotel-slider__item">
                 <img
                   class="hotel-slider__image"
-                  src="img/slider/slide3.jpg"
+                  src="./img/slider/slide3.jpg"
                   alt=""
                   srcset=""
                 />
@@ -206,7 +206,7 @@
               <div class="swiper-slide hotel-slider__item">
                 <img
                   class="hotel-slider__image"
-                  src="img/slider/slide4.jpg"
+                  src="./img/slider/slide4.jpg"
                   alt=""
                   srcset=""
                 />
@@ -214,7 +214,7 @@
               <div class="swiper-slide hotel-slider__item">
                 <img
                   class="hotel-slider__image"
-                  src="img/slider/slide5.jpg"
+                  src="./img/slider/slide5.jpg"
                   alt=""
                   srcset=""
                 />
@@ -241,12 +241,12 @@
                 <!-- /.booking__price -->
                 <div class="booking__room">
                   <div class="booking__text">
-                    <img src="img/user.svg" alt="" class="booking__icon" />
+                    <img src="./img/user.svg" alt="" class="booking__icon" />
                     <span class="booking__description">2 x Guests</span>
                   </div>
 
                   <div class="booking__text">
-                    <img src="img/home.svg" alt="" class="booking__icon" />
+                    <img src="./img/home.svg" alt="" class="booking__icon" />
                     <span class="booking__description">1 x Room</span>
                   </div>
                 </div>
@@ -256,16 +256,27 @@
               <div class="booking__call-center">
                 <span class="booking__heading">Quick Booking</span>
                 <a href="tel:12100" class="booking__number">
-                  <img src="img/phone-call.svg" alt="" />
+                  <img src="./img/phone-call.svg" alt="" />
                   <span class="booking__num">12100</span>
                 </a>
               </div>
               <!-- /.booking__call-center -->
-              <button class="button booking__button">View Other Options</button>
+              <button data-toggle="modal" class="button booking__button">
+                View Other Options
+              </button>
             </div>
             <!-- /.booking -->
             <div class="map">
-              <div id="map" style="max-width: 100%; height: 215px"></div>
+              <div id="map" style="max-width: 100%; height: 215px">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13267.261806537925!2d-118.19991562861175!3d33.76543448510365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dd31308598dfb7%3A0x161611a6c797ed4f!2sHyatt%20Centric%20The%20Pike%20Long%20Beach!5e0!3m2!1sen!2skz!4v1617254424399!5m2!1sen!2skz"
+                  width="100%"
+                  height="215px"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                ></iframe>
+              </div>
             </div>
             <!-- /.map -->
           </div>
@@ -350,18 +361,18 @@
               <div class="reviews-slider__item">
                 <div class="reviews-slider__profile">
                   <img
-                    src="/img/reviews-awatar.jfif"
+                    src="./img/reviews-awatar.jfif"
                     alt="Photo: Megan Fox"
                     class="reviews-slider__avatar"
                   />
                   <h3 class="reviews-slider__username">Megan Fox</h3>
                   <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
                   <div class="reviews-slider__rating">
-                    <img src="img/star.svg" alt="star" />
-                    <img src="img/star.svg" alt="star" />
-                    <img src="img/star.svg" alt="star" />
-                    <img src="img/star.svg" alt="star" />
-                    <img src="img/star.svg" alt="star" />
+                    <img src="./img/star.svg" alt="star" />
+                    <img src="./img/star.svg" alt="star" />
+                    <img src="./img/star.svg" alt="star" />
+                    <img src="./img/star.svg" alt="star" />
+                    <img src="./img/star.svg" alt="star" />
                   </div>
                   <!-- /.rating -->
                 </div>
@@ -385,18 +396,18 @@
               <div class="reviews-slider__item">
                 <div class="reviews-slider__profile">
                   <img
-                    src="img/reviews-awatar.jfif"
+                    src="./img/reviews-awatar.jfif"
                     alt="Photo: Megan Fox"
                     class="reviews-slider__avatar"
                   />
                   <h3 class="reviews-slider__username">Megan Fox</h3>
                   <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
                   <div class="reviews-slider__rating">
-                    <img src="img/star.svg" alt="star" />
-                    <img src="img/star.svg" alt="star" />
-                    <img src="img/star.svg" alt="star" />
-                    <img src="img/star.svg" alt="star" />
-                    <img src="img/star.svg" alt="star" />
+                    <img src="./img/star.svg" alt="star" />
+                    <img src="./img/star.svg" alt="star" />
+                    <img src="./img/star.svg" alt="star" />
+                    <img src="./img/star.svg" alt="star" />
+                    <img src="./img/star.svg" alt="star" />
                   </div>
                   <!-- /.rating -->
                 </div>
@@ -435,7 +446,7 @@
         <div class="activities-wrapper">
           <div class="card activities__card">
             <img
-              src="img/activities/active1.png"
+              src="./img/activities/active1.png"
               alt="The curious corner of chamarel"
               class="card__image"
             />
@@ -445,7 +456,7 @@
           <!-- /.card https://prnt.sc/10ovhyh -->
           <div class="card activities__card">
             <img
-              src="img/activities/active2.png"
+              src="./img/activities/active2.png"
               alt="Gymkhana club golf course"
               class="card__image"
             />
@@ -455,7 +466,7 @@
           <!-- /.card -->
           <div class="card activities__card">
             <img
-              src="img/activities/active3.png"
+              src="./img/activities/active3.png"
               alt="Tamarind falls hiking trip - full day"
               class="card__image"
             />
@@ -465,7 +476,7 @@
           <!-- /.card -->
           <div class="card activities__card">
             <img
-              src="img/activities/active4.png"
+              src="./img/activities/active4.png"
               alt="The blue marine discovery quest"
               class="card__image"
             />
@@ -483,7 +494,7 @@
       <div class="container">
         <div class="footer-wrapper">
           <img
-            src="/img/logo/vertical-logo.svg"
+            src="./img/logo/vertical-logo.svg"
             alt="Logo: Best Tour Plan"
             class="logo footer__logo"
           />
@@ -547,13 +558,13 @@
             <h3 class="footer__title footer__title--inline">SOCAIL NETWORK</h3>
             <div class="footer__soctial-links">
               <a href="#" class="footer__link"
-                ><img src="/img/footer/facebook.svg" alt="icon: facebook"
+                ><img src="./img/footer/facebook.svg" alt="icon: facebook"
               /></a>
               <a href="#" class="footer__link"
-                ><img src="/img/footer/youtube.svg" alt="icon: youtube"
+                ><img src="./img/footer/youtube.svg" alt="icon: youtube"
               /></a>
               <a href="#" class="footer__link"
-                ><img src="/img/footer/instagram.svg" alt="icon: instagram"
+                ><img src="./img/footer/instagram.svg" alt="icon: instagram"
               /></a>
             </div>
           </div>
@@ -586,7 +597,7 @@
               <li class="footer__item footer__item--mb-2">
                 <div class="footer__icon-wrapper">
                   <img
-                    src="img/footer/location.png"
+                    src="./img/footer/location.png"
                     alt=""
                     class="footer__icon"
                   />
@@ -597,7 +608,7 @@
               <li class="footer__item footer__item--mb-2">
                 <div class="footer__icon-wrapper">
                   <img
-                    src="/img/footer/Fphone.png"
+                    src="./img/footer/Fphone.png"
                     alt=""
                     class="footer__icon"
                   />
@@ -610,7 +621,11 @@
               </li>
               <li class="footer__item footer__item--mb-2">
                 <div class="footer__icon-wrapper">
-                  <img src="img/footer/post.png" alt="" class="footer__icon" />
+                  <img
+                    src="./img/footer/post.png"
+                    alt=""
+                    class="footer__icon"
+                  />
                 </div>
                 cherly.lawson@example.com
               </li>
@@ -619,34 +634,102 @@
           <!-- /.footer__contact-detail -->
           <div class="footer__contact-form">
             <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
-            <form action="#" class="footer__form">
+            <form action="send.php" method="POST" class="footer__form">
               <input
                 type="text"
                 class="input footer__input"
                 placeholder="Your Full Name*"
+                name="name"
               />
               <input
                 type="text"
                 class="input footer__input"
                 placeholder="Phone Number*"
+                name="phone"
               />
               <textarea
                 id=""
-                cols="30"
-                rows="10"
                 placeholder="Message "
-                class="footer__message"
+                class="message footer__message"
+                name="message"
               ></textarea>
-              <button class="button footer__button" type="submit">Send</button>
-              <span class="footer__info">* Required Fields</span>
+              <div class="footer__div">
+                <button class="button footer__button" type="submit">
+                  Send
+                </button>
+                <span class="footer__info">* Required Fields</span>
+              </div>
             </form>
           </div>
         </div>
         <!--footer__soctial-network  -->
+        <div class="footer__fix">
+          <div class="footer__payments">
+            <ul class="footer__ul footer__payments-ul">
+              <li class="footer__item footer__item-li">
+                <a href="#" class="footer__link">Disclaimer</a>
+              </li>
+              <li class="footer__item footer__item-li">
+                <a href="#" class="footer__link">Conditions of use</a>
+              </li>
+              <li class="footer__item footer__item-li">
+                <a href="#" class="footer__link">Cancellation policy</a>
+              </li>
+            </ul>
+          </div>
+          <img
+            class="footer__payments-icons"
+            src="./img/footer/payments.svg"
+            alt=""
+          /><!-- /.footer__payments -->
+        </div>
       </div>
     </footer>
 
-    <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/main.js"></script>
+    <div class="modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="#" class="modal__close">
+          <img src="./img/close.svg" alt="icon: close" />
+        </a>
+        <h3 class="modal__title modal__title--mb-3">Send us a message</h3>
+        <form action="send.php" method="POST" class="modal__form">
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Your Full Name*"
+            name="name"
+          />
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Phone Number*"
+            name="phone"
+          />
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Email*"
+            name="email"
+          />
+          <textarea
+            id=""
+            placeholder="Message "
+            class="message modal__message"
+            name="message"
+          ></textarea>
+          <div class="modal__div">
+            <button class="button modal__button" type="submit">Send</button>
+            <span class="modal__info">* Required Fields</span>
+          </div>
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
